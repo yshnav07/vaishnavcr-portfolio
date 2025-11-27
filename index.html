@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -468,4 +469,473 @@
   <script src="main.js"></script>
 </body>
 
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vaishnav CR — Data Scientist</title>
+
+  <!-- Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="neonCursor"></div>
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav glass">
+    <a href="#home" class="logo" aria-label="Vaishnav CR">
+      <span class="logo-mark">&lt;CR.dev&gt;</span>
+      <span class="logo-text" id="logoText">Vaishnav CR</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle">
+      <span id="themeIcon">🌙</span>
+    </button>
+
+
+
+  </nav>
+  <!-- HERO GRADIENT AREA START -->
+  <div class="hero-gradient-wrapper">
+    <div class="neon-avatar-container">
+      <lottie-player src="assets/animations/avatar.json" background="transparent" speed="1" loop autoplay>
+      </lottie-player>
+    </div>
+
+    <!-- HERO (Premium Left Text + Right Photo) -->
+    <header id="home" class="section hero premium-hero">
+      <div class="hero-left animate-on-scroll">
+        <div class="intro small">Research Intern • India Meteorological Department (IMD)</div>
+
+        <h1 class="headline">
+          <span class="headline-line">Hi — I’m</span>
+          <span class="headline-name" id="heroName">Vaishnav <span class="highlight">CR</span></span>
+        </h1>
+
+        <p class="sub">Machine Learning • NLP • Full-stack (Django) • Data Engineering</p>
+
+        <div class="hero-cta">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-outline" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="dev-badges">
+          <span class="badge">Python</span>
+          <span class="badge">NLP</span>
+          <span class="badge">Django</span>
+          <span class="badge">SQL</span>
+        </div>
+      </div>
+
+      <div class="hero-right animate-on-scroll">
+        <div class="avatar-wrap hover-animate">
+          <img src="icons/profile.jpeg" class="avatar" alt="Vaishnav CR">
+          <div class="avatar-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="quick-stats glass hover-animate">
+          <div><strong>IMD</strong><span>Research Intern</span></div>
+          <div><strong>4+</strong><span>Projects</span></div>
+          <div><strong>MSc</strong><span>Data Science</span></div>
+        </div>
+      </div>
+    </header>
+
+  </div>
+  <!-- HERO GRADIENT AREA END -->
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section glass animate-on-scroll premium-about">
+
+    <div class="about-title-wrap">
+      <h2 class="section-title about-title">About</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="about-container">
+      <p class="about-intro">
+        I’m a Data Science postgraduate student and Research Intern at the India Meteorological
+        Department (IMD), where I work on climate data modeling, automated analytics, and ML-driven insights.
+        My core strengths lie in Machine Learning, NLP, and Full-Stack Development, transforming raw data into
+        deployable applications. I enjoy solving real-world problems using clean code, structured pipelines,
+        and research-driven approaches.
+      </p>
+
+      <div class="about-columns">
+
+        <!-- LEFT -->
+        <div class="about-col">
+          <ul class="about-list">
+            <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Palakkad, Kerala</li>
+            <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong>
+              <a href="mailto:vaishnavratheesh007@gmail.com">vaishnavratheesh007@gmail.com</a>
+            </li>
+            <li><i class="fa-solid fa-graduation-cap"></i> <strong>MSc:</strong> Data Science — Christ Univ. (2024–2026)
+            </li>
+            <li><i class="fa-solid fa-school"></i> <strong>B.Voc:</strong> St. Thomas College (2021–2024)</li>
+            <li><i class="fa-solid fa-language"></i> <strong>Languages:</strong> English, Malayalam, Hindi</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-col">
+          <h4 class="about-sub">What I Do</h4>
+          <p>
+            I design ML models (classical & deep learning), build NLP pipelines using BERT/DistilBERT,
+            and develop production-ready Django applications. My projects include ATS Resume Checker,
+            AI Project Management System (video summarization), and flight-price forecasting models.
+          </p>
+
+          <h4 class="about-sub">Tech Stack</h4>
+          <p class="muted">
+            Python • Pandas • Scikit-learn • TensorFlow • Keras • NLTK • Hugging Face<br>
+            Django • MySQL • DBSqlite • NumPy
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/python.png" class="tech-icon" alt="python">
+        <h3>Python</h3>
+        <p>NumPy, Pandas, Matplotlib</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/ml.png" class="tech-icon" alt="ml">
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, Feature Engineering, Classification, Regression</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/nlp.png" class="tech-icon" alt="nlp">
+        <h3>NLP</h3>
+        <p>BERT, DistilBERT, Tokenization</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/django.png" class="tech-icon" alt="django">
+        <h3>Django</h3>
+        <p>DBSqlite Auth, Admin</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/sql.png" class="tech-icon" alt="sql">
+        <h3>SQL</h3>
+        <p>Joins, Indexing, Optimization</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/tf.png" class="tech-icon" alt="tf">
+        <h3>Deep Learning</h3>
+        <p>TensorFlow, Keras, LSTM</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/excel.png" class="tech-icon" alt="excel">
+        <h3>MS Excel</h3>
+        <p>Pivot tables, Functions</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/java.png" class="tech-icon" alt="java">
+        <h3>Java</h3>
+        <p>OOP Concepts</p>
+      </div>
+
+      <div class="skill-card premium-card premium-tilt animate-on-scroll">
+        <img src="icons/html.png" class="tech-icon" alt="html">
+        <h3>HTML</h3>
+        <p>Semantic Markup</p>
+      </div>
+
+    </div>
+
+    <!-- Skill Bars Upgraded -->
+    <div class="skill-bars premium-card animate-on-scroll">
+
+      <div class="skill-bar">
+        <div class="skill-title">Python</div>
+        <div class="bar">
+          <div class="bar-fill" data-fill="95%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-title">Machine Learning</div>
+        <div class="bar">
+          <div class="bar-fill" data-fill="88%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-title">Deep Learning</div>
+        <div class="bar">
+          <div class="bar-fill" data-fill="85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-title">Django</div>
+        <div class="bar">
+          <div class="bar-fill" data-fill="82%"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="project-list">
+
+
+      <!-- Project: DeepSense Neural Emotion System -->
+      <!-- NEW PROJECT: DeepSense Neural Emotion System -->
+      <article class="project premium-card premium-tilt animate-on-scroll">
+
+        <div class="project-image-wrap">
+          <img src="icons/ChatGPT Image Nov 27, 2025, 09_21_27 AM.png" class="premium-thumb"
+            alt="DeepSense Neural Emotion System">
+          <div class="project-image-glow"></div>
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title-gradient">DeepSense — Neural Emotion System</h3>
+
+          <p>
+            DeepSense is an advanced neural emotion engine that decodes human emotions
+            using multimodal deep learning — voice tone, facial micro-expressions, and text sentiment.
+            Includes an adaptive AI chatbot that responds emotionally and contextually for
+            highly human-like conversations.
+          </p>
+
+          <div class="meta">
+            Deep Learning • CNN • RNN • Emotion Recognition • Chatbot • NLP • Neural Networks
+          </div>
+        </div>
+
+      </article>
+
+
+
+      <!-- Project 1 -->
+      <article class="project premium-card premium-tilt animate-on-scroll">
+        <img src="icons/resume.png" class="project-thumb" alt="ATS resume">
+        <div class="project-content">
+          <h3>ATS Resume Checker</h3>
+          <p>
+            Transformer-based resume evaluator (BERT / DistilBERT) that scores resumes vs job descriptions
+            and suggests improvements to improve ATS compatibility.
+          </p>
+          <div class="meta">NLP • BERT • Python</div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project premium-card premium-tilt animate-on-scroll">
+        <img src="icons/project.png" class="project-thumb" alt="AI PMS">
+        <div class="project-content">
+          <h3>AI-Powered Project Management System</h3>
+          <p>
+            Django portal with role-based access and AI video summarization for class discussions;
+            automates minutes and tracking.
+          </p>
+          <div class="meta">Django • NLP • DBSqlite</div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project premium-card premium-tilt animate-on-scroll">
+        <img src="icons/flight.png" class="project-thumb" alt="flight price">
+        <div class="project-content">
+          <h3>Flight Price Prediction</h3>
+          <p>
+            Regression pipelines for forecasting flight fares — engineered features, evaluated models,
+            tuned hyperparameters, and deployed evaluation dashboards.
+          </p>
+          <div class="meta">Pandas • Scikit-learn • ML</div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project premium-card premium-tilt animate-on-scroll">
+        <img src="icons/vehicle.png" class="project-thumb" alt="vehicle rental">
+        <div class="project-content">
+          <h3>Vehicle Rental System</h3>
+          <p>
+            Production-ready Django app with booking flow, admin CRUD, dashboards, and user-level features.
+          </p>
+          <div class="meta">Django • SQL • HTML/CSS</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+
+      <!-- Experience Card 1 -->
+      <div class="timeline-item premium-card premium-tilt animate-on-scroll">
+        <div class="t-left">Aug 2025 — Present</div>
+        <div class="t-right">
+          <h4>Research Intern — India Meteorological Department (IMD), Pune</h4>
+          <p>
+            Climate analysis, ML model building, automated cleaning systems,
+            visual dashboards, and technical research contributions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="timeline-item premium-card premium-tilt animate-on-scroll">
+        <div class="t-left">Nov 2023 — Jul 2024</div>
+        <div class="t-right">
+          <h4>Marketing Analyst — Cygnus IT Solutions</h4>
+          <p>
+            Client onboarding, analytics-driven content strategies—
+            30% engagement boost, 40% increase in qualified leads.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-list">
+
+      <!-- Card 1 -->
+      <div class="edu-card premium-tilt animate-on-scroll">
+        <img src="icons/christ.jpg" class="edu-img" alt="Christ University">
+
+        <div class="edu-content premium-tilt animate-on-scroll">
+          <h3>MSc Data Science — Christ University, Lavasa</h3>
+          <div class="edu-meta">2024 — 2026</div>
+          <a href="https://lavasa.christuniversity.in" target="_blank" class="edu-link">Visit Website →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="edu-card premium-tilt animate-on-scroll">
+        <img src="icons/st thomas.jpg" class="edu-img" alt="St Thomas College">
+
+        <div class="edu-content premium-tilt animate-on-scroll">
+          <h3>B.Voc Data Science — St. Thomas College</h3>
+          <div class="edu-meta">2021 — 2024</div>
+          <a href="https://stthomas.ac.in" target="_blank" class="edu-link">Visit Website →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-card premium-card premium-tilt animate-on-scroll">
+        Data Analysis with Python — <span class="highlight">IBM</span>
+      </div>
+
+      <div class="cert-card premium-card premium-tilt animate-on-scroll">
+        SQL & Relational Databases
+      </div>
+
+      <div class="cert-card premium-card premium-tilt animate-on-scroll">
+        AWS Academy — Cloud Foundations
+      </div>
+
+      <div class="cert-card premium-card premium-tilt animate-on-scroll">
+        Power BI — <span class="highlight">Be10x</span>
+      </div>
+
+      <div class="cert-card premium-card premium-tilt animate-on-scroll">
+        Python Essentials — <span class="highlight">Cisco</span>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer-new">
+    <div class="footer-quote">"Creating With Logic, Growing With Curiosity."</div>
+    <a href="#contact" class="footer-touch">GetInTouch();</a>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/vaishnav_c_r?igsh=YzdkOTMzcDBscGZh" target="_blank" class="footer-icon"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/vaishnav-cr-201657276/" target="_blank" class="footer-icon"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yshnav07" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+
+      <a href="mailto:vaishnavratheesh007@gmail.com" class="footer-icon"><i class="far fa-envelope"></i></a>
+    </div>
+    <!-- PREMIUM 3D ORB FOOTER ELEMENT -->
+    <div class="footer-orb fade-in">
+      <div class="orb-glow-ring"></div>
+      <div class="orb-core"></div>
+    </div>
+
+
+
+
+
+    <a href="#home" class="footer-back">← BACK TO TOP</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+>>>>>>> 227981bb392afe580a10cd8302c61641e48cffc5
 </html>
