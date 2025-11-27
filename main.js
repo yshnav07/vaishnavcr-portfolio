@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* ================================
    MAIN JS — CLEAN + OPTIMIZED
 ================================ */
@@ -260,7 +260,6 @@ themeBtn.addEventListener("click", () => {
   document.body.style.transition = "background 0.45s ease, color 0.45s ease";
   setTimeout(() => (document.body.style.transition = ""), 600);
 });
-=======
 /* ================================
    MAIN JS — CLEAN + OPTIMIZED
 ================================ */
@@ -522,4 +521,3 @@ themeBtn.addEventListener("click", () => {
   document.body.style.transition = "background 0.45s ease, color 0.45s ease";
   setTimeout(() => (document.body.style.transition = ""), 600);
 });
->>>>>>> 227981bb392afe580a10cd8302c61641e48cffc5
