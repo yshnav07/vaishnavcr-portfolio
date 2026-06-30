@@ -2,6 +2,16 @@
    MAIN JS — CLEAN + OPTIMIZED
 ================================ */
 
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    setTimeout(() => {
+      preloader.classList.add("fade-out");
+      setTimeout(() => preloader.remove(), 800);
+    }, 1200); // 1.2s loading effect
+  }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ==========================
@@ -90,10 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add("visible");
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+        } else {
+          e.target.classList.remove("visible");
+        }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
   );
 
   document.querySelectorAll(
@@ -127,6 +141,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("#home, #about").forEach((el) =>
     el.classList.add("visible")
   );
+
+  /* ==========================
+      NAVBAR SCROLL SHRINK & HIDE
+  ========================== */
+  const navbar = document.getElementById("navbar");
+  let lastScrollY = window.scrollY;
+
+  if (navbar) {
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 150) {
+        navbar.classList.add("scrolled");
+        
+        // Hide when scrolling down, show when scrolling up
+        if (currentScrollY > lastScrollY) {
+          navbar.classList.add("nav-hidden");
+        } else {
+          navbar.classList.remove("nav-hidden");
+        }
+      } else {
+        navbar.classList.remove("scrolled");
+        navbar.classList.remove("nav-hidden");
+      }
+      
+      lastScrollY = currentScrollY;
+    });
+  }
 
 });
 
@@ -181,3 +223,12 @@ themeBtn.addEventListener("click", () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+// Toggle Education Accordion
+window.toggleEducation = function() {
+  const content = document.getElementById('education-content');
+  const chevron = document.getElementById('edu-chevron');
+  if (content && chevron) {
+    content.classList.toggle('expanded');
+    chevron.classList.toggle('rotated');
+  }
+};

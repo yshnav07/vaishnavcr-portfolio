@@ -4,408 +4,428 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vaishnav CR </title>
+  <title>Vaishnav CR | Super Portfolio</title>
 
-  <!-- Space Grotesk -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+  <!-- Google Fonts: Outfit & Inter for modern premium look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800;900&family=Bebas+Neue&display=swap"
     rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="neonCursor"></div>
-
-  <div id="cursor-glow" class="cursor-glow"></div>
-
-  <canvas id="bg-canvas" class="bg-canvas"></canvas>
-
-  <!-- NAV -->
-  <nav class="nav glass">
-    <a href="#home" class="logo">
-      <span class="logo-mark">&lt;CR.dev&gt;</span>
-      <span class="logo-text" id="logoText">Vaishnav CR</span>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-    </ul>
-
-    <button id="themeToggle" class="theme-toggle">
-      <span id="themeIcon">🌙</span>
-    </button>
-  </nav>
-
-  <!-- HERO -->
-  <div class="hero-gradient-wrapper">
-    <div class="neon-avatar-container">
-      <lottie-player src="assets/animations/avatar.json" background="transparent" speed="1" loop
-        autoplay></lottie-player>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <span class="logo-mark loader-logo">&lt;CR&gt;</span>
+      <div class="loader-bar-bg">
+        <div class="loader-bar"></div>
+      </div>
     </div>
-
-    <header id="home" class="section hero premium-hero">
-      <div class="hero-left animate-on-scroll">
-        <div class="intro small">Research Intern • India Meteorological Department (IMD)</div>
-
-        <h1 class="headline">
-          <span class="headline-line">Hi — I’m</span>
-          <span class="headline-name">Vaishnav <span class="highlight">CR</span></span>
-        </h1>
-
-        <p class="sub">Machine Learning • NLP • Full-stack (Django) • Data Engineering</p>
-
-        <div class="hero-cta">
-          <a class="btn-primary" href="#projects">View Projects</a>
-          <a class="btn-outline" href="#contact-section">Contact Me</a>
-        </div>
-
-        <div class="dev-badges">
-          <span class="badge">Python</span>
-          <span class="badge">NLP</span>
-          <span class="badge">Django</span>
-          <span class="badge">SQL</span>
-        </div>
-      </div>
-
-      <div class="hero-right animate-on-scroll">
-        <div class="avatar-wrap hover-animate">
-          <img src="icons/profile.jpeg" class="avatar" alt="Vaishnav CR">
-          <div class="avatar-glow"></div>
-        </div>
-
-        <div class="quick-stats glass hover-animate">
-          <div><strong>IMD</strong><span>Research Intern</span></div>
-          <div><strong>4+</strong><span>Projects</span></div>
-          <div><strong>MSc</strong><span>Data Science</span></div>
-        </div>
-      </div>
-    </header>
   </div>
 
-  <!-- ABOUT -->
-  <section id="about" class="section glass animate-on-scroll premium-about">
-    <div class="about-title-wrap">
-      <h2 class="section-title about-title">About</h2>
-      <div class="title-underline"></div>
-    </div>
+  <!-- Custom Cursors -->
+  <div id="neonCursor"></div>
+  <div id="cursor-glow" class="cursor-glow"></div>
 
-    <div class="about-container">
-      <p class="about-intro">
-        🙂 Hey there! I’m Vaishnav CR, a Data Science postgraduate student and a Research Intern at the
-        India Meteorological Department (IMD). I specialize in Machine Learning, NLP, Data Engineering,
-        and full-stack development with Django.
+  <!-- Animated Background -->
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+  <div class="bg-gradient-mesh"></div>
 
-        <br><br>🚀 I love building meaningful ML/NLP systems, solving real-world problems, and converting
-        raw data into scalable applications. From resume-analysis models to intelligent prediction systems,
-        I enjoy creating things that make an impact.
-
-        <br><br>📊 Currently exploring climate analytics and large-scale data pipelines at IMD, while also
-        working on personal projects across AI and full-stack development.
-
-        <br><br>⚡ Outside tech, you’ll find me watching football, exploring new tools, or experimenting with
-        creative ideas.
-      </p>
-      </p>
-
-      <div class="about-columns">
-
-        <!-- LEFT -->
-        <div class="about-col">
-          <ul class="about-list">
-            <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Palakkad, Kerala</li>
-            <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong>
-              <a href="mailto:vaishnavratheesh007@gmail.com">vaishnavratheesh007@gmail.com</a>
-            </li>
-            <li><i class="fa-solid fa-graduation-cap"></i> <strong>MSc:</strong> Data Science — Christ Univ. (2024–2026)
-            </li>
-            <li><i class="fa-solid fa-school"></i> <strong>B.Voc:</strong> St. Thomas College (2021–2024)</li>
-            <li><i class="fa-solid fa-language"></i> <strong>Languages:</strong> English, Malayalam, Hindi</li>
-          </ul>
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="nav glass-nav">
+    <img src="icons/compressed_7c39bc29298ba1d9d995212daa835142.webp" alt="Avatar" class="nav-avatar-img"
+      onclick="scrollToTop()">
+    <div class="nav-inner">
+      <a href="#home" class="logo group">
+        <div class="logo-box">
+          <span class="logo-mark">&lt;CR&gt;</span>
         </div>
 
-        <!-- RIGHT -->
-        <div class="about-col">
-          <h4 class="about-sub">What I Do</h4>
-          <p>
-            I design ML models (classical & deep learning), build NLP pipelines using BERT/DistilBERT,
-            and develop production-ready Django applications. My projects include ATS Resume Checker,
-            AI Project Management System (video summarization), and flight-price forecasting models.
-          </p>
+      </a>
 
-          <h4 class="about-sub">Tech Stack</h4>
-          <p class="muted">
-            Python • Pandas • Scikit-learn • TensorFlow • Keras • NLTK • Hugging Face<br>
-            Django • MySQL • SQLite • NumPy • Matplotlib
-          </p>
-        </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+      </ul>
 
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle hover-pulse" aria-label="Toggle Theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <a href="#contact" class="btn-primary small-btn">Let's Talk</a>
       </div>
     </div>
+  </nav>
 
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content animate-on-scroll">
+        <div class="status-badge">
+          <span class="status-dot"></span> Available for Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          Hey, I'm <span class="text-gradient">Vaishnav CR.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I am an <strong>AI/ML Engineer</strong> specializing in Generative AI, RAG pipelines, Deep Learning, and NLP
+          systems. Passionate about deploying scalable, production-ready AI solutions.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary large-btn hover-glow">Explore Work <i
+              class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-secondary large-btn">Contact Me</a>
+        </div>
+
+
+      </div>
+
+      <div class="hero-visual animate-on-scroll">
+        <div class="hero-visual-inner premium-tilt">
+          <div class="glass-panel main-visual-card">
+            <div class="avatar-ring">
+              <img src="icons/vaishnav_pic.png" class="hero-avatar" alt="Vaishnav CR">
+            </div>
+            <div class="visual-stats">
+              <div class="stat-item">
+                <span class="stat-num">8+</span>
+                <span class="stat-label">Major Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">AI / ML</span>
+                <span class="stat-label">Data Scientist</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Internships</span>
+              </div>
+            </div>
+            <div class="lottie-overlay">
+              <lottie-player src="assets/animations/avatar.json" background="transparent" speed="1" loop
+                autoplay></lottie-player>
+            </div>
+          </div>
+          <!-- Floating UI Elements -->
+          <div class="floating-badge badge-1 glass-panel"><i class="fa-solid fa-code-branch"></i> Data Engineer</div>
+          <div class="floating-badge badge-2 glass-panel"><i class="fa-solid fa-robot"></i> ML / NLP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (BENTO GRID) -->
+  <section id="about" class="section animate-on-scroll">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Who <span class="text-gradient">I Am</span></h2>
+      <p class="section-desc">The architect behind the algorithms.</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Intro Box -->
+      <div class="bento-box bento-large glass-panel premium-tilt animate-on-scroll"
+        style="background: linear-gradient(135deg, rgba(112, 0, 255, 0.15), rgba(0, 0, 0, 0.6)); border-left: 4px solid var(--accent-1);">
+        <p style="font-size: 1.15rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 15px;">
+          I don't just build models—I engineer <strong style="color: var(--accent-1);">intelligent systems</strong> that
+          solve real-world problems. As an AI/ML Engineer, my expertise lies at the bleeding edge of <strong>Generative
+            AI, RAG architectures, and complex data pipelines</strong>.
+        </p>
+        <p style="font-size: 1.05rem; color: var(--text-secondary);">
+          Whether it's reducing latency in Text-to-SQL queries or analyzing neural EEG data for emotion detection, my
+          ultimate goal is to bridge the gap between cutting-edge AI research and scalable, production-ready
+          applications.
+        </p>
+      </div>
+
+      <!-- Quick Info -->
+      <div class="bento-box glass-panel premium-tilt animate-on-scroll bento-info">
+        <h3>Details</h3>
+        <ul class="info-list">
+          <li><i class="fa-solid fa-location-dot accent-icon"></i> Palakkad, Kerala</li>
+          <li><i class="fa-solid fa-graduation-cap accent-icon"></i> MSc Data Science</li>
+          <li><i class="fa-solid fa-school accent-icon"></i> Christ University</li>
+          <li><i class="fa-solid fa-language accent-icon"></i> English, Malayalam, Hindi</li>
+        </ul>
+      </div>
+
+      <!-- What I do -->
+      <div class="bento-box bento-wide glass-panel premium-tilt animate-on-scroll">
+        <h3>What I Do</h3>
+        <p>I design advanced ML/DL models (CNN, LSTM), build generative AI pipelines using LLMs and Transformers, and
+          develop production-ready APIs with FastAPI and Django. I specialize in integrating RAG and Text-to-SQL
+          architectures.</p>
+        <div class="mini-skills">
+          <span>Python</span> <span>FastAPI</span> <span>RAG</span> <span>LLMs</span> <span>Transformers</span>
+          <span>Vector DBs</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/python.png" class="tech-icon" alt="python">
-        <h3>Python</h3>
-        <p>NumPy, Pandas, Matplotlib</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/MLLogo.png" class="tech-icon" alt="ml">
-        <h3>ML / AI</h3>
-        <p>Scikit-learn, Feature Engineering, Classification, Regression</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/nlp.png" class="tech-icon" alt="nlp">
-        <h3>NLP</h3>
-        <p>BERT, DistilBERT, Tokenization</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/django.png" class="tech-icon" alt="django">
-        <h3>Django</h3>
-        <p>Auth, ORM, REST APIs</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/sql.png" class="tech-icon" alt="sql">
-        <h3>SQL</h3>
-        <p>Joins, Indexing, Optimization</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/dl logo.png" class="tech-icon" alt="tf">
-        <h3>Deep Learning</h3>
-        <p>TensorFlow, CNN, LSTM</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/excel.png" class="tech-icon" alt="excel">
-        <h3>MS Excel</h3>
-        <p>Pivot tables, Functions</p>
-      </div>
-
-      <div class="skill-card premium-card premium-tilt animate-on-scroll">
-        <img src="icons/html.png" class="tech-icon" alt="html">
-        <h3>HTML & CSS</h3>
-        <p>Semantic Markup, Responsive UI</p>
-      </div>
-
+  <section id="skills" class="section animate-on-scroll">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Tech <span class="text-gradient">Arsenal</span></h2>
+      <p class="section-desc">The tools I use to build scalable systems.</p>
     </div>
 
-    <!-- Skill Bars -->
-    <div class="skill-bars premium-card animate-on-scroll">
-
-      <div class="skill-bar">
-        <div class="skill-title">Python</div>
-        <div class="bar">
-          <div class="bar-fill" data-fill="95%"></div>
-        </div>
+    <div class="skills-bento">
+      <!-- Card 1 -->
+      <div class="bento-skill-card animate-on-scroll">
+        <div class="bento-icon"><i class="fa-solid fa-code" style="color: #00f0ff;"></i></div>
+        <h3>Programming</h3>
+        <ul>
+          <li><i class="fa-solid fa-chevron-right"></i> Python </li>
+          <li><i class="fa-solid fa-chevron-right"></i> SQL (MySQL, PostgreSQL)</li>
+        </ul>
       </div>
 
-      <div class="skill-bar">
-        <div class="skill-title">Machine Learning</div>
-        <div class="bar">
-          <div class="bar-fill" data-fill="88%"></div>
-        </div>
+      <!-- Card 2 -->
+      <div class="bento-skill-card animate-on-scroll" style="transition-delay: 0.1s;">
+        <div class="bento-icon"><i class="fa-solid fa-brain" style="color: #58a6ff;"></i></div>
+        <h3>Machine Learning</h3>
+        <ul>
+          <li><i class="fa-solid fa-chevron-right"></i> Scikit-learn, Pandas, NumPy</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Deep Learning</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Modeling & Time Series Data</li>
+        </ul>
       </div>
 
-      <div class="skill-bar">
-        <div class="skill-title">Deep Learning</div>
-        <div class="bar">
-          <div class="bar-fill" data-fill="85%"></div>
-        </div>
+      <!-- Card 3 -->
+      <div class="bento-skill-card animate-on-scroll" style="transition-delay: 0.2s;">
+        <div class="bento-icon"><i class="fa-solid fa-robot" style="color: #9d00ff;"></i></div>
+        <h3>AI & NLP Systems</h3>
+        <ul>
+          <li><i class="fa-solid fa-chevron-right"></i> LLMs & RAG Pipelines</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Vector Databases (ChromaDB)</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Transformers & Prompting</li>
+        </ul>
       </div>
 
-      <div class="skill-bar">
-        <div class="skill-title">Django</div>
-        <div class="bar">
-          <div class="bar-fill" data-fill="82%"></div>
-        </div>
+      <!-- Card 4 -->
+      <div class="bento-skill-card animate-on-scroll" style="transition-delay: 0.3s;">
+        <div class="bento-icon"><i class="fa-solid fa-server" style="color: #00f0ff;"></i></div>
+        <h3>Backend & Web</h3>
+        <ul>
+          <li><i class="fa-solid fa-chevron-right"></i> FastAPI & Django</li>
+          <li><i class="fa-solid fa-chevron-right"></i> RESTful API Design</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Full Stack Architecture</li>
+        </ul>
       </div>
 
+      <!-- Card 5 -->
+      <div class="bento-skill-card animate-on-scroll" style="transition-delay: 0.4s;">
+        <div class="bento-icon"><i class="fa-solid fa-chart-line" style="color: #58a6ff;"></i></div>
+        <h3>Data Engineering</h3>
+        <ul>
+
+          <li><i class="fa-solid fa-chevron-right"></i> ETL Pipeline Development</li>
+          <li><i class="fa-solid fa-chevron-right"></i> Exploratory Data Analysis</li>
+        </ul>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bento-skill-card animate-on-scroll" style="transition-delay: 0.5s;">
+        <div class="bento-icon"><i class="fa-solid fa-screwdriver-wrench" style="color: #9d00ff;"></i></div>
+        <h3>Tools & Workflows</h3>
+        <ul>
+          <li><i class="fa-solid fa-chevron-right"></i> Git & Version Control</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2 class="section-title">Selected Projects</h2>
-
-    <div class="project-list">
-
-      <article class="project premium-card premium-tilt animate-on-scroll">
-        <div class="project-image-wrap">
-          <img src="icons/ChatGPT Image Nov 27, 2025, 09_21_27 AM.png" class="premium-thumb" alt="DeepSense">
-          <div class="project-image-glow"></div>
-        </div>
-
-        <div class="project-content">
-          <h3 class="project-title-gradient">DeepSense — Neural Emotion System</h3>
-          <p>
-            DeepSense decodes emotions using multimodal learning (voice, face, text). Includes an adaptive
-            chatbot and emotion-aware responses for human-like interaction.
-          </p>
-          <div class="meta">Deep Learning • CNN • RNN • Emotion Recognition • NLP</div>
-        </div>
-      </article>
-
-      <article class="project premium-card premium-tilt animate-on-scroll">
-        <img src="icons/resume.png" class="project-thumb" alt="ATS resume">
-        <div class="project-content">
-          <h3>ATS Resume Checker</h3>
-          <p>Transformer-based resume evaluator (DistilBERT) that scores resumes vs JD and suggests improvements.</p>
-          <div class="meta">NLP • BERT • Python</div>
-        </div>
-      </article>
-
-      <article class="project premium-card premium-tilt animate-on-scroll">
-        <img src="icons/project.png" class="project-thumb" alt="AI PMS">
-        <div class="project-content">
-          <h3>AI Project Management System</h3>
-          <p>Django portal with role-based access and AI video summarization features for class discussions.</p>
-          <div class="meta">Django • NLP • SQLite</div>
-        </div>
-      </article>
-
-      <article class="project premium-card premium-tilt animate-on-scroll">
-        <img src="icons/flight.png" class="project-thumb" alt="flight price">
-        <div class="project-content">
-          <h3>Flight Price Prediction</h3>
-          <p>Regression pipelines for forecasting flight fares — feature engineering, model evaluation and dashboards.
-          </p>
-          <div class="meta">Pandas • Scikit-learn • ML</div>
-        </div>
-      </article>
-
+  <section id="projects" class="section animate-on-scroll">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Selected <span class="text-gradient">Projects</span></h2>
+      <p class="section-desc">Showcasing my best work and case studies.</p>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item premium-card premium-tilt animate-on-scroll">
-        <div class="t-left">Aug 2025 — Present</div>
-        <div class="t-right">
-          <h4>Research Intern — India Meteorological Department (IMD), Pune</h4>
-          <p>Climate data modelling, ML research, automated analytics pipelines, and dashboards.</p>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <a href="https://github.com/yshnav07/LMS-AI-Chatbot" target="_blank" class="github-repo-card animate-on-scroll">
+        <div class="repo-header">
+          <div class="repo-title">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <h3>LMS-AI-Chatbot</h3>
+          </div>
+          <span class="repo-badge private">Private</span>
         </div>
-      </div>
-
-      <div class="timeline-item premium-card premium-tilt animate-on-scroll">
-        <div class="t-left">Nov 2023 — Jul 2024</div>
-        <div class="t-right">
-          <h4>Marketing Analyst — Cygnus IT Solutions</h4>
-          <p>Analytics-driven content strategies and performance optimization (engagement uplift).</p>
+        <p class="repo-desc">
+          Multi-pipeline AI chatbot integrating RAG with Text-to-SQL, improving accuracy by 20%. Features context-aware
+          follow-ups and Voice-to-Text interface.
+        </p>
+        <div class="repo-footer">
+          <span class="repo-lang"><span class="lang-color python"></span>Python</span>
         </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <h2 class="section-title">Education</h2>
-
-    <div class="edu-list">
-
-      <div class="edu-card premium-tilt animate-on-scroll">
-        <img src="icons/christ.jpg" class="edu-img" alt="Christ University">
-        <div class="edu-content">
-          <h3>MSc Data Science — Christ University, Lavasa</h3>
-          <div class="edu-meta">2024 — 2026</div>
-          <a href="https://lavasa.christuniversity.in" target="_blank" class="edu-link">Visit Website →</a>
-        </div>
-      </div>
-
-      <div class="edu-card premium-tilt animate-on-scroll">
-        <img src="icons/st thomas.jpg" class="edu-img" alt="St Thomas College">
-        <div class="edu-content">
-          <h3>B.Voc Data Science — St. Thomas College</h3>
-          <div class="edu-meta">2021 — 2024</div>
-          <a href="https://stthomas.ac.in" target="_blank" class="edu-link">Visit Website →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CERTIFICATES -->
-  <section id="certificates" class="section">
-    <h2 class="section-title">Certifications</h2>
-
-    <div class="cert-grid">
-      <div class="cert-card premium-card premium-tilt animate-on-scroll">Data Analysis with Python — <span
-          class="highlight">IBM</span></div>
-      <div class="cert-card premium-card premium-tilt animate-on-scroll">SQL & Relational Databases</div>
-      <div class="cert-card premium-card premium-tilt animate-on-scroll">AWS Academy — Cloud Foundations</div>
-      <div class="cert-card premium-card premium-tilt animate-on-scroll">Power BI — <span class="highlight">Be10x</span>
-      </div>
-      <div class="cert-card premium-card premium-tilt animate-on-scroll">Python Essentials — <span
-          class="highlight">Cisco</span></div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="contact-section" class="footer-modern">
-
-    <h2 class="footer-quote">"Creating With Logic, Growing With Curiosity."</h2>
-
-    <a href="#contact" class="footer-contact">GetInTouch();</a>
-
-    <div class="footer-socials-modern">
-      <a href="https://www.instagram.com/vaishnav_c_r?igsh=YzdkOTMzcDBscGZh" target="_blank" class="footer-social-icon">
-        <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.linkedin.com/in/vaishnav-cr-201657276/" target="_blank" class="footer-social-icon">
-        <i class="fab fa-linkedin"></i>
+
+      <!-- Project 2 -->
+      <a href="https://github.com/yshnav07/DeepSense-Neural-Emotion-AI-System.git" target="_blank"
+        class="github-repo-card animate-on-scroll">
+        <div class="repo-header">
+          <div class="repo-title">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <h3>DeepSense-Neural-AI</h3>
+          </div>
+          <span class="repo-badge private">Private</span>
+        </div>
+        <p class="repo-desc">
+          Hybrid CNN-LSTM model for EEG emotion classification (80% accuracy) integrated with a neuroscience-informed
+          RAG chatbot to explain emotional patterns.
+        </p>
+        <div class="repo-footer">
+          <span class="repo-lang"><span class="lang-color python"></span>Python</span>
+        </div>
       </a>
-      <a href="https://github.com/yshnav07" target="_blank" class="footer-social-icon">
-        <i class="fab fa-github"></i>
+
+      <!-- Project 3 -->
+      <a href="https://github.com/yshnav07/Project-management-System.git" target="_blank"
+        class="github-repo-card animate-on-scroll">
+        <div class="repo-header">
+          <div class="repo-title">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <h3>AI-Project-Management</h3>
+          </div>
+          <span class="repo-badge private">Private</span>
+        </div>
+        <p class="repo-desc">
+          Multi-role project platform with AI video summarization (85% coverage) and automated workflows, reducing
+          update turnaround by 35%.
+        </p>
+        <div class="repo-footer">
+          <span class="repo-lang"><span class="lang-color python"></span>Python</span>
+        </div>
       </a>
-      <a href="mailto:vaishnavratheesh007@gmail.com" class="footer-social-icon">
-    <i class="fas fa-envelope"></i>
-</a>
 
 
     </div>
+  </section>
 
-    <!-- Center Avatar -->
-    <div class="footer-avatar-modern">
-      <img src="icons/compressed_7c39bc29298ba1d9d995212daa835142.webp" alt="avatar" />
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience" class="section animate-on-scroll">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Journey & <span class="text-gradient">Experience</span></h2>
+      <p class="section-desc">My academic and professional timeline.</p>
     </div>
 
-    <p class="footer-credit">Re-Built By Vaishnav CR © 2025</p>
+    <div class="timeline-container">
+      <div class="timeline-column animate-on-scroll">
+        <h3 class="timeline-header"><i class="fa-solid fa-briefcase"></i> Experience</h3>
 
-    <!-- Right Side Back to Top -->
-    <div class="back-to-top" onclick="scrollToTop()">↑ BACK TO TOP</div>
+        <div class="timeline-item glass-panel premium-tilt">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2026 — Jun 2026</div>
+          <h4 class="timeline-role">Data Science Intern</h4>
+          <div class="timeline-company">VOPAIS (Remote)</div>
+          <p>Built an AI chatbot using RAG and Text-to-SQL, improving accuracy by 20%+. Developed scalable data
+            retrieval architecture using PostgreSQL, LLM APIs, and vector databases.</p>
+        </div>
 
+        <div class="timeline-item glass-panel premium-tilt">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Aug 2025 — Apr 2026</div>
+          <h4 class="timeline-role">Research Intern</h4>
+          <div class="timeline-company">India Meteorological Department (IMD), Pune</div>
+          <p>Analyzed climate datasets and built data processing pipelines using Pandas and Scikit-learn, reducing data
+            preparation time by 40%. Generated spatial rainfall maps.</p>
+        </div>
+      </div>
+
+      <div class="timeline-column animate-on-scroll">
+        <div class="accordion-header" onclick="toggleEducation()">
+          <h3 class="timeline-header" style="margin: 0; pointer-events: none;"><i
+              class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <i id="edu-chevron" class="fa-solid fa-chevron-down accordion-icon"></i>
+        </div>
+
+        <div id="education-content" class="accordion-content">
+          <div class="timeline-item glass-panel premium-tilt">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 — 2026</div>
+            <h4 class="timeline-role">MSc Data Science</h4>
+            <div class="timeline-company">Christ University, Lavasa</div>
+            <p>Advanced studies in Machine Learning, MySQL, and Statistical Analysis.</p>
+          </div>
+
+          <div class="timeline-item glass-panel premium-tilt">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 — 2024</div>
+            <h4 class="timeline-role">B.Voc Data Science</h4>
+            <div class="timeline-company">St. Thomas College</div>
+            <p>Foundational knowledge in programming, databases, and data analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES (Marquee or Grid) -->
+  <section id="certificates" class="section animate-on-scroll">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Licenses & <span class="text-gradient">Certifications</span></h2>
+    </div>
+    <div class="cert-grid animate-on-scroll">
+      <div class="cert-pill glass-panel premium-tilt">Data Analysis with Python — <span
+          class="cert-highlight">IBM</span></div>
+      <div class="cert-pill glass-panel premium-tilt">SQL & Relational Databases</div>
+      <div class="cert-pill glass-panel premium-tilt">AWS Academy — Cloud Foundations</div>
+      <div class="cert-pill glass-panel premium-tilt">Power BI — <span class="cert-highlight">Be10x</span></div>
+      <div class="cert-pill glass-panel premium-tilt">Python Essentials — <span class="cert-highlight">Cisco</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" class="footer glass-panel">
+    <div class="footer-content animate-on-scroll">
+      <div class="footer-avatar">
+        <img src="icons/compressed_7c39bc29298ba1d9d995212daa835142.webp" alt="avatar" />
+      </div>
+      <h2 class="footer-quote text-gradient">"Creating With Logic, Growing With Curiosity."</h2>
+      <a href="mailto:vaishnavratheesh007@gmail.com" class="btn-primary large-btn hover-glow mt-4">Start a
+        Conversation</a>
+
+      <div class="social-links">
+        <a href="https://github.com/yshnav07" target="_blank" class="social-icon premium-tilt"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vaishnav-cr-201657276/" target="_blank" class="social-icon premium-tilt"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/vaishnav_c_r" target="_blank" class="social-icon premium-tilt"><i
+            class="fab fa-instagram"></i></a>
+        <a href="mailto:vaishnavratheesh007@gmail.com" class="social-icon premium-tilt"><i
+            class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Vaishnav CR. All Rights Reserved.</p>
+      <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i> Top
+      </button>
+    </div>
   </footer>
 
-  <!-- Lottie player (required for the neon avatar Lottie file) -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-  <!-- Main JS (keep as a file in repo: main.js) -->
+  <!-- Scripts -->
   <script src="main.js"></script>
-
 </body>
 
 </html>
